@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:cani="http://canigneus.com/taglib/data">
+<ui:composition template="template.xhtml">
+	<ui:define name="content">
+		<f:view>
+			<!-- <f:metadata>
+				<f:viewParam name="brandName"
+					value="#{mainSearchController.current.brandName}" />
+			</f:metadata> -->
+			<f:event listener="#{mainSearchController.search}"
+				type="preRenderView" />
+		</f:view>
+		<div id="content" class="container" role="main">
+			<div class="row">
+
+
+				<div id="primary" class="col-lg-8 search-content">
+
+
+					<header class="entry-header">
+					<h1 class="entry-page-title">
+						Search Results for: <span>a</span>
+					</h1>
+					<div class="archive-desc">Here's what we've found for you</div>
+					</header>
+
+
+
+					<p:dataTable id="dataTable" var="item"
+						value="#{mainSearchController.items}" paginator="true" rows="10"
+						lazy="true" paginatorPosition="bottom">
+
+						<p:column>
+							<article id="post-123"
+								class="post-123 post type-post status-publish format-image hentry category-github tag-accont tag-github tag-help tag-name tag-user clearfix"
+								itemtype="http://schema.org/BlogPosting">
+
+							<div class="articles-block" style="background-color: #d1b31d">
+								<div class="row">
+									<!-- <div class="col-lg-6">
+
+
+								<img
+									src="http://wp.color-theme.com/techdesk/wp-content/uploads/2013/09/photodune-4288403-city-m1-770x428.jpg"
+									title="What happens when I change my username?"
+									alt="What happens when I change my username?" />
+							</div> -->
+									<!-- /col-lg-6 -->
+
+									<div class="col-lg-12">
+
+
+										<h3>
+											<a
+												href="view.xhtml?id=#{item.id}?title=#{item.header}"
+												title="What happens when I change my username?">#{item.header} <i
+												class="icon-long-arrow-right"></i>
+											</a>
+										</h3>
+
+										<div class="meta clearfix">
+											Created on #{item.createdDate}
+												by #{item.createdBy}
+										</div>
+										<!-- .meta -->
+
+										<div class="clear"></div>
+										<div class="margin-10b"></div>
+
+										<div class="post-content">On the GitHub side, everything
+											will behave as if your new username had always been your
+											name. All of your repositories will now belong ...</div>
+										<!-- /post-content -->
+
+										<div class="clear"></div>
+
+										<a
+											href="http://wp.color-theme.com/techdesk/what-happens-when-i-change-my-username"
+											class="btn-more-circle"
+											title="What happens when I change my username?"><i
+											class="icon-chevron-right"></i></a>
+
+									</div>
+									<!-- /col-lg-6 -->
+
+								</div>
+								<!-- /row -->
+							</div>
+							<!-- /articles-block --> </article>
+							<!-- #post-ID -->
+						</p:column>
+					</p:dataTable>
+
+					<article id="post-113"
+						class="post-113 post type-post status-publish format-image hentry category-github tag-business tag-github tag-plan tag-support clearfix"
+						itemtype="http://schema.org/BlogPosting">
+
+					<div class="articles-block" style="background-color: #2ba4bc">
+						<div class="row">
+							<div class="col-lg-6">
+
+
+								<img
+									src="http://wp.color-theme.com/techdesk/wp-content/uploads/2013/09/photodune-4233949-sandwich-with-salami-m-770x428.jpg"
+									title="What plan should I choose?"
+									alt="What plan should I choose?" />
+							</div>
+							<!-- /col-lg-6 -->
+
+							<div class="col-lg-6">
+
+
+								<h3>
+									<a
+										href="http://wp.color-theme.com/techdesk/what-plan-should-i-choose"
+										title="What plan should I choose?">What plan should I
+										choose? <i class="icon-long-arrow-right"></i>
+									</a>
+								</h3>
+
+								<div class="meta clearfix">
+									6 months ago with <a
+										href="http://wp.color-theme.com/techdesk/what-plan-should-i-choose#respond"
+										title="Comment on What plan should I choose?">no comments</a>
+									in <a href="http://wp.color-theme.com/techdesk/category/github"
+										title="View all posts in github">github</a>
+								</div>
+								<!-- .meta -->
+
+								<div class="clear"></div>
+								<div class="margin-10b"></div>
+
+								<div class="post-content">Free versus paid Free accounts
+									can have as many public repositories as you&#8217;d like, with
+									unlimited collaboration. Free accounts do ...</div>
+								<!-- /post-content -->
+
+								<div class="clear"></div>
+
+								<a
+									href="http://wp.color-theme.com/techdesk/what-plan-should-i-choose"
+									class="btn-more-circle" title="What plan should I choose?"><i
+									class="icon-chevron-right"></i></a>
+
+							</div>
+							<!-- /col-lg-6 -->
+
+						</div>
+						<!-- /row -->
+					</div>
+					<!-- /articles-block --> </article>
+					<!-- #post-ID -->
+
+
+					<article id="post-110"
+						class="post-110 post type-post status-publish format-audio hentry category-github tag-account tag-github tag-help tag-support masonry-box clearfix"
+						itemtype="http://schema.org/BlogPosting">
+
+					<div class="articles-block" style="background-color: #1b896a">
+						<div class="row">
+
+
+							<div class="col-lg-6">
+								<div class="entry-thumb">
+									<iframe
+										src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F109125457"></iframe>
+								</div>
+								<!-- .entry-thumb -->
+							</div>
+							<!-- /col-lg-6 -->
+
+
+							<div class="col-lg-6">
+
+
+								<h3>
+									<a
+										href="http://wp.color-theme.com/techdesk/how-do-i-cancel-my-account"
+										title="How do I cancel my account?">How do I cancel my
+										account? <i class="icon-long-arrow-right"></i>
+									</a>
+								</h3>
+
+								<div class="meta clearfix">
+									6 months ago with <a
+										href="http://wp.color-theme.com/techdesk/how-do-i-cancel-my-account#respond"
+										title="Comment on How do I cancel my account?">no comments</a>
+									in <a href="http://wp.color-theme.com/techdesk/category/github"
+										title="View all posts in github">github</a>
+								</div>
+								<!-- .meta -->
+
+								<div class="clear"></div>
+								<div class="margin-10b"></div>
+
+								<div class="post-content">You can downgrade or delete your
+									account at any time, no questions asked. Finding the account
+									First, you need to determine which ...</div>
+								<!-- /post-content -->
+
+								<div class="clear"></div>
+
+								<a
+									href="http://wp.color-theme.com/techdesk/how-do-i-cancel-my-account"
+									class="btn-more-circle" title="How do I cancel my account?"><i
+									class="icon-chevron-right"></i></a>
+
+							</div>
+							<!-- /col-lg-6 -->
+
+						</div>
+						<!-- /row -->
+					</div>
+					<!-- /articles-block --> </article>
+
+
+					<div class="container-pagination">
+						<div class="pagination clearfix" role="navigation">
+							<span class="current">1</span><a
+								href='http://wp.color-theme.com/techdesk/page/2?s=a&#038;submit'
+								class="inactive">2</a><a
+								href='http://wp.color-theme.com/techdesk/page/3?s=a&#038;submit'
+								class="inactive">3</a><a
+								href='http://wp.color-theme.com/techdesk/page/4?s=a&#038;submit'
+								class="inactive">4</a><a
+								href='http://wp.color-theme.com/techdesk/page/5?s=a&#038;submit'
+								class="inactive">5</a><a
+								href='http://wp.color-theme.com/techdesk/page/6?s=a&#038;submit'
+								class="inactive">6</a><a
+								href='http://wp.color-theme.com/techdesk/page/7?s=a&#038;submit'
+								class="inactive">7</a><a
+								href='http://wp.color-theme.com/techdesk/page/8?s=a&#038;submit'
+								class="inactive">8</a>
+						</div>
+					</div>
+					<!-- /container-pagination -->
+
+
+					<div class="clear"></div>
+				</div>
+				<!-- /col-lg-* -->
+
+				<div id="secondary" class="sidebar col-lg-4" role="complementary">
+
+					<aside id="ct_posts_widget-2"
+						class="widget ct_posts_widget clearfix">
+					<div class="recent-block" style="background-color: #42586A">
+						<i class="icon-file-alt"></i>
+
+
+						<!-- START RECENT POSTS WIDGET -->
+						<h4 class="widget-title">Recent Posts</h4>
+
+						<ul class="recent-posts-widget recent-widget-614600441">
+							<li class="clearfix">
+								<div class="post-title">
+									<i class="icon-picture"></i>
+									<h5>
+										<a
+											href='http://wp.color-theme.com/techdesk/what-happens-when-i-change-my-username'
+											title='Permalink to What happens when I change my username?'>What
+											happens when I change my username?</a>
+									</h5>
+								</div> <!-- post-title --> <footer class="meta clearfix"> 6
+								months ago with <a
+									href="http://wp.color-theme.com/techdesk/what-happens-when-i-change-my-username#respond"
+									title="Comment on What happens when I change my username?">no
+									comments</a> </footer> <!-- .meta -->
+
+
+
+							</li>
+							<li class="clearfix">
+								<div class="post-title">
+									<i class="icon-picture"></i>
+									<h5>
+										<a
+											href='http://wp.color-theme.com/techdesk/what-plan-should-i-choose'
+											title='Permalink to What plan should I choose?'>What plan
+											should I choose?</a>
+									</h5>
+								</div> <!-- post-title --> <footer class="meta clearfix"> 6
+								months ago with <a
+									href="http://wp.color-theme.com/techdesk/what-plan-should-i-choose#respond"
+									title="Comment on What plan should I choose?">no comments</a> </footer>
+								<!-- .meta -->
+
+
+
+							</li>
+							<li class="clearfix">
+								<div class="post-title">
+									<i class="icon-music"></i>
+									<h5>
+										<a
+											href='http://wp.color-theme.com/techdesk/how-do-i-cancel-my-account'
+											title='Permalink to How do I cancel my account?'>How do I
+											cancel my account?</a>
+									</h5>
+								</div> <!-- post-title --> <footer class="meta clearfix"> 6
+								months ago with <a
+									href="http://wp.color-theme.com/techdesk/how-do-i-cancel-my-account#respond"
+									title="Comment on How do I cancel my account?">no comments</a>
+								</footer> <!-- .meta -->
+
+
+
+							</li>
+							<li class="clearfix">
+								<div class="post-title">
+									<i class="icon-pencil"></i>
+									<h5>
+										<a
+											href='http://wp.color-theme.com/techdesk/what-is-my-disk-quota'
+											title='Permalink to What is my disk quota?'>What is my
+											disk quota?</a>
+									</h5>
+								</div> <!-- post-title --> <footer class="meta clearfix"> 6
+								months ago with <a
+									href="http://wp.color-theme.com/techdesk/what-is-my-disk-quota#respond"
+									title="Comment on What is my disk quota?">no comments</a> </footer> <!-- .meta -->
+
+
+
+							</li>
+						</ul>
+
+					</div>
+					<!-- /recent-block --> </aside>
+					<!-- END RECENT POSTS WIDGET -->
+					<aside id="ct_categories_widget-3"
+						class="widget ct_categories_widget clearfix">
+
+					<div class="custom-cat-block" style="background-color: #6a4d42">
+						<i class="icon-list"></i>
+
+
+						<!-- START RECENT POSTS WIDGET -->
+						<h4 class="widget-title">Categories Custom Style</h4>
+						<ul class="custom-category-list">
+							<li><div class="count-item-block">
+									<span>5</span>
+								</div> <!-- /count-item-block --> <a
+								href="http://wp.color-theme.com/techdesk/category/envato"
+								title="View all posts in envato">envato</a></li>
+							<li><div class="count-item-block">
+									<span>7</span>
+								</div> <!-- /count-item-block --> <a
+								href="http://wp.color-theme.com/techdesk/category/github"
+								title="View all posts in github">github</a></li>
+							<li><div class="count-item-block">
+									<span>4</span>
+								</div> <!-- /count-item-block --> <a
+								href="http://wp.color-theme.com/techdesk/category/microlancer"
+								title="View all posts in microlancer">microlancer</a></li>
+							<li><div class="count-item-block">
+									<span>5</span>
+								</div> <!-- /count-item-block --> <a
+								href="http://wp.color-theme.com/techdesk/category/wordpress"
+								title="View all posts in Wordpress">Wordpress</a></li>
+						</ul>
+					</div>
+
+					</aside>
+					<aside id="ct_instagram_widget-4"
+						class="widget ct_instagram_widget clearfix">
+					<div class="instagram-block" style="background-color: #5e4772">
+						<i class="icon-instagram"></i>
+
+						<!-- START INSTAGRAM WIDGET -->
+						<h4 class="widget-title">Instagram Feed</h4>
+						<script type="text/javascript">
+		/* <![CDATA[ */
+		/***************************************************
+							Instagram
+		***************************************************/
+		jQuery.noConflict()(function($){
+		  "use strict";
+			$(document).ready(function() {
+				jQuery.fn.spectragram.accessData = {
+					accessToken:'2136707.12e2743.9576ae17af4e4ad4aebf6b72433c01fd',
+					clientID:'12e27430fe054c72839c5f16f86177e1'
+			};
+			
+		      //Call spectagram function on the container element and pass it your query
+			$('.ct-instagram-928306119').spectragram('getPopular', {
+				query:'awesomeinventions', //this gets user photo feed
+				size:'small',
+				max:8				});
+			});
+		});
+		/* ]]> */
+		</script>
+
+						<ul class="ct-instagram-928306119 clearfix"></ul>
+
+					</div>
+					<!-- /instagram-block --> </aside>
+					<!-- END INSTAGRAM WIDGET -->
+					<ui:include src="twitter.xhtml"/>
+				</div>
+				<!-- /col-lg-4 -->
+
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /#content .container -->
+
+
+
+
+	</ui:define>
+</ui:composition>
+</html>
