@@ -22,7 +22,7 @@ public abstract class BaseJsfUserController {
 			return null;
 		}
 	}
-
+    
 	public boolean isLoggedIn() {
 		ExternalContext externalContext = FacesContext.getCurrentInstance()
 				.getExternalContext();

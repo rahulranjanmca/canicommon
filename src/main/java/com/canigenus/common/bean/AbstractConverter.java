@@ -21,7 +21,7 @@ import javax.faces.model.SelectItem;
 
 public abstract class AbstractConverter
     implements Converter, Serializable
-{
+{ 
 
 	private static final long serialVersionUID = 1L;
 	public AbstractConverter()

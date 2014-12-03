@@ -14,7 +14,7 @@ public abstract class AbstractIdConverter implements Converter{
 	public String getName() {
 		return "name";
 	}
-
+    
 	public abstract Class<? extends Convertible<?>> getClassType();
 
 	public Object getAsObject(FacesContext context, UIComponent component,
